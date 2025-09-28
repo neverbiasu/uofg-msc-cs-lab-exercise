@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.8.5
+    hooks:
+      - id: nbqa-black
+        additional_dependencies: ["black==24.8.0"]
+        files: "\\.(ipynb)$"
+      - id: nbqa-isort
+        additional_dependencies: ["isort==5.13.2"]
+        files: "\\.(ipynb)$"
+      - id: nbqa-flake8
+        additional_dependencies: ["flake8==7.1.1"]
+        files: "\\.(ipynb)$"

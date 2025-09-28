@@ -1,0 +1,26 @@
+[tool.black]
+line-length = 88
+# Black enforces 4-space indentation and other formatting rules automatically.
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+# strict = true  # enable selectively if you want stronger typing checks
+
+[tool.nbqa]
+# nbqa will pick up black/isort/flake8 configuration from this file when run against notebooks
+
+[tool.nbqa.addopts]
+flake8 = ["--max-line-length=100", "--extend-ignore=E203,W503,E402,F841"]
+
+[tool.metadata]
+# Project-level metadata (optional)
+name = "uofg-msc-cs-lab-exercise"
