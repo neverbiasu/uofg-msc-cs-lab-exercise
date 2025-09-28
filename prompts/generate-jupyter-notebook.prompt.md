@@ -2,154 +2,142 @@
 
 You are tasked with creating a comprehensive lab exercise in Jupyter Notebook format for computer science students. The exercise should focus on Python programming concepts and practical implementation.
 
-## Instructions
+## Core Requirements
 
-1. **Structure**: Create a well-organized notebook with the following components:
-   - Introduction section explaining the learning objectives
-   - Multiple exercise tasks with clear descriptions
-   - Code cells for student implementation
-   - Expected output examples where appropriate
+### Design Principles
+- **Keep it Simple**: Exercise descriptions must be concise, one line that captures the core requirement
+- **Use Original Text**: If source materials exist, prioritize using the original text description to maintain accuracy
+- **Clear Structure**: Must include a complete table of contents for easy navigation
 
-2. **Content Requirements**:
-   - Write task descriptions in markdown cells using clear, concise language
-   - Provide context and background information for each exercise
-   - Include step-by-step instructions when needed
-   - Add helpful hints or tips where appropriate
+### Required Components (in order)
+1. **Title** - Lab title with topic, total exercises, and estimated time
+2. **Table of Contents** - Place after title, use numbered list format (1. 2. 3...), NO categories/grouping
+3. **Learning Objectives** - Clear and concise objectives table
+4. **Exercise Groups** - Organize by topic, 3-5 exercises per group
+5. **Code Cells** - Each exercise followed by empty Python code cell
 
-3. **Code Block Format**:
-   - For each programming task, provide an **empty Python code cell** where students can write their solutions
-   - Use the following format for code cells:
-     ```python
-     # TODO: Write your code here
-     
-     ```
-   - Do not include the actual solution code - leave it for students to implement
+### Exercise Format Standard
+```markdown
+### Exercise X: Title (Level X)
+One concise line describing what the student needs to do.
+```
 
-4. **Exercise Types** (choose appropriate ones based on the topic):
+### Code Cell Format
+```python
+# Exercise X: Title
+# TODO: Write your code here
+```
 
-   | Exercise Category | Learning Objectives | Typical Tasks |
-   |-------------------|-------------------|---------------|
-   | **Programming Fundamentals** | Master basic syntax and operations | Variable assignments, calculations, string operations |
-   | **Control Structures** | Implement decision-making and repetition | Conditional logic, loop implementations, flow control |
-   | **Functions and Modules** | Create reusable code components | Function definitions, parameter handling, module imports |
-   | **Data Structures** | Manipulate complex data types | List operations, dictionary usage, set manipulations |
-   | **Object-Oriented Programming** | Design and implement classes | Class definitions, inheritance, method implementations |
-   | **File Operations** | Handle external data sources | File reading/writing, data parsing, format conversions |
-   | **Error Handling** | Implement robust error management | Exception handling, validation, debugging techniques |
-   | **Algorithm Implementation** | Solve computational problems | Sorting, searching, optimization algorithms |
-   | **Data Analysis** | Process and analyze datasets | Statistical calculations, data visualization, reporting |
+### Table of Contents Format
+Use numbered list without categorization:
+```markdown
+# Table of Contents
 
-5. **Formatting Guidelines**:
-   - Use proper markdown formatting with headers, bullet points, and code blocks
-   - Include learning objectives at the beginning
-   - Add difficulty indicators using the following system:
-     
-     | Difficulty Level | Indicator | Description |
-     |------------------|-----------|-------------|
-     | Beginner | Level 1 | Basic concepts, minimal complexity |
-     | Intermediate | Level 2 | Moderate complexity, combines multiple concepts |
-     | Advanced | Level 3 | Complex problem-solving, advanced techniques |
-     
-   - Provide estimated completion time for each task
-   - Include relevant examples or sample inputs/outputs
-   - Use tables for structured information when appropriate
-   - Organize content with numbered lists for sequential steps
+1. [Exercise 1: Title](#exercise-1-title-level-x)
+2. [Exercise 2: Title](#exercise-2-title-level-x)
+3. [Exercise 3: Title](#exercise-3-title-level-x)
+...
+```
 
-6. **Educational Best Practices**:
+## Exercise Categories
 
-   Follow these structured approaches for effective learning:
+| Category | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Control Structures** | Loops and conditionals | For loops, while loops, if-else statements |
+| **Functions** | Reusable code | Function definitions, parameters, return values |
+| **Data Structures** | Lists, dicts, tuples | List operations, dictionary manipulation, tuple handling |
+| **Random Operations** | Random number generation | Random selections, probability, games |
+| **File Operations** | Data input/output | File reading/writing, data processing |
+| **Object-Oriented** | Classes and objects | Class definition, inheritance, methods |
+| **Algorithms** | Problem solving | Sorting, searching, optimization |
 
-   ### Learning Progression Strategy
-   1. **Scaffolded Learning**: Start with simpler concepts and gradually increase complexity
-   2. **Clear Assessment**: Provide explicit success criteria for each task
-   3. **Differentiation**: Include extension challenges for advanced students
-   4. **Reflection**: Add structured reflection questions at the end
+## Difficulty Levels
 
-   ### Task Structure Template
-   | Component | Purpose | Implementation |
-   |-----------|---------|----------------|
-   | **Learning Objective** | Define what students will achieve | Clear, measurable goals |
-   | **Context** | Provide background information | Real-world applications |
-   | **Instructions** | Guide implementation process | Step-by-step numbered lists |
-   | **Success Criteria** | Define completion standards | Specific, testable outcomes |
-   | **Extension** | Challenge advanced learners | Optional advanced features |
-   | **Reflection** | Encourage metacognition | Guided questions about learning |
+| Level | Description | Characteristics |
+|-------|-------------|----------------|
+| **Level 1** | Beginner | Single concept, minimal complexity |
+| **Level 2** | Intermediate | Multiple concepts, moderate complexity |
+| **Level 3** | Advanced | Complex problem-solving, advanced techniques |
 
-## Example Task Format
+## Best Practices
+
+### Content Guidelines
+- **Simplicity First**: Keep exercise descriptions to one line when possible
+- **Original Text**: Use source material verbatim when available
+- **Progressive Difficulty**: Start with Level 1, gradually increase complexity
+- **Clear Instructions**: Avoid complex explanations, focus on what to do
+- **No Exercise Numbers**: Remove "Exercise X:" prefixes from titles
+
+### Notebook Structure
+1. **Title** - Clear, descriptive lab title (no subject codes)
+2. **Table of Contents** - Numbered list, no categories, descriptive names only
+3. **Learning Objectives** - Simple table format
+4. **Exercises** - Grouped by topic, clean descriptive titles
+5. **Code Cells** - Empty cells with descriptive comments
+
+## Example Format
 
 ```markdown
-## Task 1: Basic Calculator (Level 1)
-**Estimated time: 15 minutes**
+# Lab Exercises - 2: Python Repetition
 
-Create a simple calculator that can perform basic arithmetic operations (addition, subtraction, multiplication, division).
+**Topic:** Python Programming - Control Structures, Functions, and Data Structures
+**Total Exercises:** 30
+**Estimated Time:** 7-8 hours
 
-### Requirements:
-1. Prompt the user to enter two numbers
-2. Ask for the operation type (+, -, *, /)
-3. Display the result
-4. Handle division by zero error
+---
 
-### Task Specifications:
+# Table of Contents
 
-| Requirement | Description | Expected Data Type |
-|-------------|-------------|-------------------|
-| Input 1 | First number | float or int |
-| Input 2 | Second number | float or int |
-| Operation | Mathematical operator | string |
-| Output | Calculation result | float |
-| Error Handling | Division by zero check | Exception handling |
+1. [Name Repetition](#name-repetition-level-1)
+2. [Selective Total](#selective-total-level-1)
+3. [Direction Counter](#direction-counter-level-1)
 
-### Expected behavior:
-```
-Enter first number: 10
-Enter second number: 5
-Enter operation (+, -, *, /): +
-Result: 15.0
+---
+
+## For Loops Exercises
+
+### Name Repetition (Level 1)
+Write a programme that asks the user to enter their name and a number. If the number is less than 10, then display their name that number of times; otherwise, display the message "Too high" three times.
 ```
 
-**Your code:**
 ```python
+# Name Repetition
 # TODO: Write your code here
-
 ```
 
-## Sample Topics to Choose From
+## Key Requirements Summary
 
-When generating lab exercises, consider these popular computer science topics organized by complexity level:
+### Must Have Elements:
+1. **Clear Title** - Lab title with topic, total exercises, and estimated time (no subject/course codes)
+2. **Table of Contents** - Numbered list (1. 2. 3...) after title, no categorization
+3. **Simple Exercise Format** - One line description per exercise, NO "Exercise X:" prefixes
+4. **Empty Code Cells** - Each exercise followed by `# TODO: Write your code here`
+5. **Level Indicators** - Level 1, 2, or 3 for each exercise
+6. **Topic Grouping** - Group related exercises under section headers
+7. **Clean Titles** - Exercise titles should be descriptive names only, not numbered
 
-### Topic Categories and Difficulty Levels
+### Common Topics by Difficulty:
 
-| Topic Category | Level 1 (Beginner) | Level 2 (Intermediate) | Level 3 (Advanced) |
-|----------------|-------------------|----------------------|-------------------|
-| **Python Fundamentals** | Variables, data types, basic operators | Type conversion, string manipulation | Advanced data type operations |
-| **Control Structures** | Simple if/else, basic loops | Nested loops, complex conditions | Loop optimization, comprehensions |
-| **Functions** | Function definition, parameters | Lambda functions, decorators | Closures, advanced decorators |
-| **Data Structures** | Lists, dictionaries basics | List/dict comprehensions, sets | Custom data structures, algorithms |
-| **Object-Oriented** | Class definition, attributes | Inheritance, polymorphism | Design patterns, metaclasses |
-| **File Operations** | Read/write text files | CSV/JSON processing | Binary files, file systems |
-| **Error Handling** | Basic try/except | Multiple exceptions, finally | Custom exceptions, context managers |
-| **Libraries** | Built-in modules | NumPy, Pandas basics | Advanced library integration |
+**Level 1 (Beginner)**
+- Basic loops and conditionals
+- Simple input/output
+- Variable operations
+- Basic list operations
 
-### Recommended Exercise Progression
+**Level 2 (Intermediate)**
+- Functions with parameters
+- Data structure manipulation
+- Error handling
+- Random operations
 
-1. **Foundation Phase** (Sessions 1-3)
-   - Python syntax and basic data types
-   - Control flow structures
-   - Basic input/output operations
+**Level 3 (Advanced)**
+- Complex algorithms
+- 2D data structures
+- Advanced problem solving
+- Integration of multiple concepts
 
-2. **Development Phase** (Sessions 4-6)
-   - Functions and modular programming
-   - Data structure manipulation
-   - File handling and data processing
-
-3. **Application Phase** (Sessions 7-9)
-   - Object-oriented programming concepts
-   - Error handling and debugging
-   - Integration with external libraries
-
-4. **Advanced Phase** (Sessions 10+)
-   - Algorithm implementation
-   - Data analysis and visualization
-   - Project-based learning
-
-Remember to tailor the difficulty and content to the appropriate academic level and ensure all exercises are educational, engaging, and practically relevant.
+### Output Requirements:
+- Generate complete notebook ready for student use
+- Include 15-30 exercises depending on topic scope
+- Ensure progressive difficulty within each topic group
+- Keep descriptions concise and actionable
