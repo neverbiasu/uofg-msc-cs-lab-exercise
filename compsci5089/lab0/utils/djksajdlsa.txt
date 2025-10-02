@@ -1,0 +1,15 @@
+(with $\gamma=1$)
+
+<br>
+$$\begin{align}
+  &{U^\pi }(S_{t}=x) = \\
+   &R({S_{t}} = x) \hfill \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,[t] \\ 
+   \\ 
+   &+ R({S_{t+1}} = x)P\left( {{S_{t+1}} = x|\pi (x),{S_{t}} = x} \right) + R({S_{t+1}} = y)P\left( {{S_{t+1}} = y|\pi (x),{S_{t}} = x} \right) + R({S_{t+1}} = z)P\left( {{S_{t+1}} = z|\pi (x),{S_{t}} = x} \right)\,\,\,\,\,[\,t+1] \\ 
+   \\ 
+   &+ R({S_{t+2}} = x)P\left( {{S_{t+2}} = x|\pi (x),{S_{t+1}} = x} \right) + R({S_{t+1}} = y)P\left( {{S_{t+2}} = y|\pi (x),{S_{t+1}} = x} \right) + R({S_{t+2}} = z)P\left( {{S_{t+2}} = z|\pi (x),{S_{t+1}} = x} \right)\,\,\,\,\,[t+2] \\ 
+   &+ R({S_{t+2}} = x)P\left( {{S_{t+2}} = x|\pi (y),{S_{t+1}}=y} \right) + R({S_{t+1}} = y)P\left( {{S_{t+2}} = y|\pi (y),{S_{t+1}} = y} \right) + R({S_{t+2}} = z)P\left( {{S_{t+2}} = z|\pi (y),{S_{t+1}} = y} \right) \\ 
+   &+ R({S_{t+2}} = x)P\left( {{S_{t+2}} = x|\pi (z),{S_{t+1}} = z} \right) + R({S_{t+1}} = y)P\left( {{S_{t+2}} = y|\pi (z),{S_{t+1}} = z} \right) + R({S_{t+2}} = z)P\left( {{S_{t+2}} = z|\pi (z),{S_{t+1}} = z} \right) \\  
+\end{align}$$
+
+....for all $t$.

@@ -1,0 +1,2 @@
+call c:\python\Anaconda3_37_201907\Scripts\activate.bat & jt -t grade3 -fs 12 -nfs 12 -tfs 12 -T -cellw 85%%  -f fira -nf latosans -tf latosans -ofs 12 -dfs 12 & jupyter nbconvert *.ipynb --to html 
+call c:\python\Anaconda3_37_201907\Scripts\activate.bat & jt -t grade3 -fs 12 -nfs 12 -tfs 12 -T -cellw 85%%  -f fira -nf latosans -tf latosans -ofs 12 -dfs 12 & jupyter nbconvert *.ipynb --to pdf
